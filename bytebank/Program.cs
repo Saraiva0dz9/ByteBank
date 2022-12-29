@@ -7,3 +7,7 @@ contaDoLeonardo.conta = "1010-x";
 contaDoLeonardo.saldo = 100;
 
 Console.WriteLine("Saldo da conta do Leonardo = " +contaDoLeonardo.saldo);
+
+contaDoLeonardo.Depositar(100);
+
+Console.WriteLine("Saldo da conta do Leonardo pós-deposito = " + contaDoLeonardo.saldo);
