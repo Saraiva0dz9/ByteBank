@@ -1,4 +1,4 @@
-﻿using bytebank;
+﻿using bytebank.Conta;
 using bytebank.Titular;
 
 //ContaCorrente contaDoLeonardo = new ContaCorrente();
@@ -57,6 +57,17 @@ Console.WriteLine("Profissão = " + conta.titular.profissao);
 Console.WriteLine("Nº Conta = " + conta.conta);
 Console.WriteLine("Nº Agência = " + conta.numeroAgencia);
 Console.WriteLine("Saldo = " + conta.saldo);
+
+ContaCorrente conta2 = new ContaCorrente();
+conta2.titular = new Cliente();
+conta2.titular.nome = "Marco Amaral";
+conta2.titular.profissao = "Ferramenteiro";
+conta2.titular.Cpf = "27401668803";
+conta2.conta = "1010-x";
+conta2.numeroAgencia = 11;
+conta2.saldo = 500;
+
+Console.WriteLine(conta2.titular.nome);
 
 
 //ContaCorrente conta = new ContaCorrente();
