@@ -1,22 +1,22 @@
 ﻿using bytebank;
 
-ContaCorrente contaDoLeonardo = new ContaCorrente();
-contaDoLeonardo.titular = "Leonardo Saraiva";
-contaDoLeonardo.numeroAgencia = 09;
-contaDoLeonardo.conta = "1010-x";
-contaDoLeonardo.saldo = 100;
-Console.WriteLine("Saldo da conta do Leonardo = " + contaDoLeonardo.saldo);
+//ContaCorrente contaDoLeonardo = new ContaCorrente();
+//contaDoLeonardo.titular = "Leonardo Saraiva";
+//contaDoLeonardo.numeroAgencia = 09;
+//contaDoLeonardo.conta = "1010-x";
+//contaDoLeonardo.saldo = 100;
+//Console.WriteLine("Saldo da conta do Leonardo = " + contaDoLeonardo.saldo);
 
-ContaCorrente contaDoLeonardo2 = new ContaCorrente();
-contaDoLeonardo2.titular = "Leonardo Saraiva";
-contaDoLeonardo2.numeroAgencia = 09;
-contaDoLeonardo2.conta = "1010-x";
-contaDoLeonardo2.saldo = 100;
-Console.WriteLine("Saldo da conta do Leonardo = " + contaDoLeonardo2.saldo);
+//ContaCorrente contaDoLeonardo2 = new ContaCorrente();
+//contaDoLeonardo2.titular = "Leonardo Saraiva";
+//contaDoLeonardo2.numeroAgencia = 09;
+//contaDoLeonardo2.conta = "1010-x";
+//contaDoLeonardo2.saldo = 100;
+//Console.WriteLine("Saldo da conta do Leonardo = " + contaDoLeonardo2.saldo);
 
-contaDoLeonardo = contaDoLeonardo2;
+//contaDoLeonardo = contaDoLeonardo2;
 
-Console.WriteLine(contaDoLeonardo == contaDoLeonardo2);    
+//Console.WriteLine(contaDoLeonardo == contaDoLeonardo2);    
 
 
 //ContaCorrente contaDaKaty = new ContaCorrente();
@@ -38,6 +38,24 @@ Console.WriteLine(contaDoLeonardo == contaDoLeonardo2);
 //Console.WriteLine(contaDoJoao.saldo);
 //Console.WriteLine(contaDoJoao.numeroAgencia);
 //Console.WriteLine(contaDoJoao.conta);
+
+Cliente cliente = new Cliente();
+cliente.nome = "Leonardo Saraiva";
+cliente.Cpf = "42992194816";
+cliente.profissao = "Desenvolvedor";
+
+ContaCorrente conta = new ContaCorrente();
+conta.titular = cliente;
+conta.conta = "1010-x";
+conta.numeroAgencia = 09;
+conta.saldo = 100;
+
+Console.WriteLine("Titular = " + conta.titular.nome);
+Console.WriteLine("CPF = " + conta.titular.Cpf);
+Console.WriteLine("Profissão = " + conta.titular.profissao);
+Console.WriteLine("Nº Conta = " + conta.conta);
+Console.WriteLine("Nº Agência = " + conta.numeroAgencia);
+Console.WriteLine("Saldo = " + conta.saldo);
 
 
 //ContaCorrente conta = new ContaCorrente();

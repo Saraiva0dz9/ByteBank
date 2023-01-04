@@ -8,26 +8,27 @@ namespace bytebank
     {
         public int numeroAgencia;
         public string conta;
-        public string titular;
         public double saldo = 100;
 
-        public static void Menu()
-        {
-            ContaCorrente contaDoLeonardo = new ContaCorrente
-            {
-                titular = "Leonardo Saraiva",
-                numeroAgencia = 09,
-                conta = "1010-x",
-                saldo = 100
-            };
+        public Cliente titular;
 
-            Console.WriteLine($"Titular da conta: {contaDoLeonardo.titular}");
-            Console.WriteLine($"Número da conta: {contaDoLeonardo.conta}");
-            Console.WriteLine($"Agência: {contaDoLeonardo.numeroAgencia}");
-            Console.WriteLine($"Saldo R$ {String.Format("{0:0.00}", contaDoLeonardo.saldo)}");
+        //public static void Menu()
+        //{
+        //    ContaCorrente contaDoLeonardo = new ContaCorrente
+        //    {
+        //        titular = "Leonardo Saraiva",
+        //        numeroAgencia = 09,
+        //        conta = "1010-x",
+        //        saldo = 100
+        //    };
 
-            Console.ReadKey();
-        }
+        //    Console.WriteLine($"Titular da conta: {contaDoLeonardo.titular}");
+        //    Console.WriteLine($"Número da conta: {contaDoLeonardo.conta}");
+        //    Console.WriteLine($"Agência: {contaDoLeonardo.numeroAgencia}");
+        //    Console.WriteLine($"Saldo R$ {String.Format("{0:0.00}", contaDoLeonardo.saldo)}");
+
+        //    Console.ReadKey();
+        //}
 
         public void Depositar(double valor)
         {
