@@ -5,28 +5,39 @@ contaDoLeonardo.titular = "Leonardo Saraiva";
 contaDoLeonardo.numeroAgencia = 09;
 contaDoLeonardo.conta = "1010-x";
 contaDoLeonardo.saldo = 100;
-
 Console.WriteLine("Saldo da conta do Leonardo = " + contaDoLeonardo.saldo);
 
-ContaCorrente contaDaKaty = new ContaCorrente();
-contaDaKaty.titular = "Katy Victoria";
-contaDaKaty.numeroAgencia = 10;
-contaDaKaty.conta = "1010-x";
-contaDaKaty.saldo = 400;
+ContaCorrente contaDoLeonardo2 = new ContaCorrente();
+contaDoLeonardo2.titular = "Leonardo Saraiva";
+contaDoLeonardo2.numeroAgencia = 09;
+contaDoLeonardo2.conta = "1010-x";
+contaDoLeonardo2.saldo = 100;
+Console.WriteLine("Saldo da conta do Leonardo = " + contaDoLeonardo2.saldo);
+
+contaDoLeonardo = contaDoLeonardo2;
+
+Console.WriteLine(contaDoLeonardo == contaDoLeonardo2);    
 
 
-Console.WriteLine("Saldo da conta da Katy = " + contaDaKaty.saldo);
+//ContaCorrente contaDaKaty = new ContaCorrente();
+//contaDaKaty.titular = "Katy Victoria";
+//contaDaKaty.numeroAgencia = 10;
+//contaDaKaty.conta = "1010-x";
+//contaDaKaty.saldo = 400;
 
-contaDoLeonardo.Transferir(50, contaDaKaty);
-Console.WriteLine("Saldo do Leonardo = "+ contaDoLeonardo.saldo);
-Console.WriteLine("Saldo do Katy = "+ contaDaKaty.saldo);
 
-ContaCorrente contaDoJoao = new ContaCorrente();
-contaDoJoao.titular = "Joao Silva";
-Console.WriteLine(contaDoJoao.titular);
-Console.WriteLine(contaDoJoao.saldo);
-Console.WriteLine(contaDoJoao.numeroAgencia);
-Console.WriteLine(contaDoJoao.conta);
+//Console.WriteLine("Saldo da conta da Katy = " + contaDaKaty.saldo);
+
+//contaDoLeonardo.Transferir(50, contaDaKaty);
+//Console.WriteLine("Saldo do Leonardo = "+ contaDoLeonardo.saldo);
+//Console.WriteLine("Saldo do Katy = "+ contaDaKaty.saldo);
+
+//ContaCorrente contaDoJoao = new ContaCorrente();
+//contaDoJoao.titular = "Joao Silva";
+//Console.WriteLine(contaDoJoao.titular);
+//Console.WriteLine(contaDoJoao.saldo);
+//Console.WriteLine(contaDoJoao.numeroAgencia);
+//Console.WriteLine(contaDoJoao.conta);
 
 
 //ContaCorrente conta = new ContaCorrente();
