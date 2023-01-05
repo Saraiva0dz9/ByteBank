@@ -40,35 +40,39 @@ using bytebank.Titular;
 //Console.WriteLine(contaDoJoao.numeroAgencia);
 //Console.WriteLine(contaDoJoao.conta);
 
-Cliente cliente = new Cliente();
-cliente.nome = "Leonardo Saraiva";
-cliente.Cpf = "42992194816";
-cliente.profissao = "Desenvolvedor";
+//Cliente cliente = new Cliente();
+//cliente.nome = "Leonardo Saraiva";
+//cliente.Cpf = "42992194816";
+//cliente.profissao = "Desenvolvedor";
 
-ContaCorrente conta = new ContaCorrente();
-conta.titular = cliente;
-conta.conta = "1010-x";
-conta.numeroAgencia = 09;
-conta.saldo = 100;
+//ContaCorrente conta = new ContaCorrente();
+//conta.titular = cliente;
+//conta.conta = "1010-x";
+//conta.numeroAgencia = 09;
+//conta.saldo = 100;
 
-Console.WriteLine("Titular = " + conta.titular.nome);
-Console.WriteLine("CPF = " + conta.titular.Cpf);
-Console.WriteLine("Profissão = " + conta.titular.profissao);
-Console.WriteLine("Nº Conta = " + conta.conta);
-Console.WriteLine("Nº Agência = " + conta.numeroAgencia);
-Console.WriteLine("Saldo = " + conta.saldo);
+//Console.WriteLine("Titular = " + conta.titular.nome);
+//Console.WriteLine("CPF = " + conta.titular.Cpf);
+//Console.WriteLine("Profissão = " + conta.titular.profissao);
+//Console.WriteLine("Nº Conta = " + conta.conta);
+//Console.WriteLine("Nº Agência = " + conta.numeroAgencia);
+//Console.WriteLine("Saldo = " + conta.saldo);
 
-ContaCorrente conta2 = new ContaCorrente();
-conta2.titular = new Cliente();
-conta2.titular.nome = "Marco Amaral";
-conta2.titular.profissao = "Ferramenteiro";
-conta2.titular.Cpf = "27401668803";
-conta2.conta = "1010-x";
-conta2.numeroAgencia = 11;
-conta2.saldo = 500;
+//ContaCorrente conta2 = new ContaCorrente();
+//conta2.titular = new Cliente();
+//conta2.titular.nome = "Marco Amaral";
+//conta2.titular.profissao = "Ferramenteiro";
+//conta2.titular.Cpf = "27401668803";
+//conta2.conta = "1010-x";
+//conta2.numeroAgencia = 11;
+//conta2.saldo = 500;
 
-Console.WriteLine(conta2.titular.nome);
+//Console.WriteLine(conta2.titular.nome);
 
+ContaCorrente conta3 = new ContaCorrente();
+conta3.DefinirSaldo(200);
+
+Console.WriteLine(conta3.ObterSaldo());
 
 //ContaCorrente conta = new ContaCorrente();
 //Console.WriteLine($"Titular da conta: {contaDoLeonardo.titular}");
