@@ -70,9 +70,9 @@ using bytebank.Titular;
 //Console.WriteLine(conta2.titular.nome);
 
 ContaCorrente conta3 = new ContaCorrente();
-conta3.DefinirSaldo(200);
+conta3.SetSaldo(200);
 
-Console.WriteLine(conta3.ObterSaldo());
+Console.WriteLine(conta3.GetSaldo());
 
 //ContaCorrente conta = new ContaCorrente();
 //Console.WriteLine($"Titular da conta: {contaDoLeonardo.titular}");
