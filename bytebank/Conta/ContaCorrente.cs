@@ -24,7 +24,7 @@ namespace bytebank.Conta
 
         private double saldo = 100;
 
-        private Cliente titular;
+        public Cliente Titular { get; set; }
 
         public void Depositar(double valor)
         {
