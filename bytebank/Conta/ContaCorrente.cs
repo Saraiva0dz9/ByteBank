@@ -18,7 +18,10 @@ namespace bytebank.Conta
                     }
                 }
         }
-        private string conta;
+
+        //private string conta;
+        public string Conta { get; set; }
+
         private double saldo = 100;
 
         private Cliente titular;
